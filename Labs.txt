@@ -1,0 +1,185 @@
+﻿LAB 1
+Find the elements in an array Y, that are equal to a given variable X.
+For example…
+elementsEqualToX(Y, X)
+elementsEqualToX(['a' ,'a' ,'b' ,'f' ,'x' ,'y'], 'a') to return ['a', 'a']
+elementsEqualToX(['t' ,'3' ,3 ,3, '5', 'v'], 3) to return  [3, 3]
+elementsEqualToX([4, 6, 2, 6, 7, '7'], '7') to return ['7']
+
+
+LAB 2
+Find the length of the numbers in array A that are divisible by 2 or 3 and greater than 15.
+For example…
+divisible(A)
+divisible([2,3,12,18,42,24]) to return 3
+divisible([100,84,22,37]) to return 1
+divisible([5,8,6,12]) to return 0
+
+
+LAB 3
+Find the total age of the applicants that applied for this interview from the given record below.
+For example…
+
+
+totalAge([{ name: "XYZ", age: 23 }, { name: "ABC", age: 40 }]) to return 63
+totalAge([{ name: "XYZ", age: 34 }, { name: "XYZ", age: 29 }, { name: "XYZ", age: 33 }]) to return 96
+totalAge([{ name: "XYZ", age: 66 }, { name: "WER", age: 44 },  { name: "AZX", age: 22 }]) to return 132
+
+
+LAB 4
+Given an array of objects containing user’s information, assign a default age X for any user that did not enter his/her age and return the array.
+
+
+checkAge([{ name: "XYZ", age: 23 }, { name: "ABC"}], 33) to return ([{ name: "XYZ", age: 23 }, { name: "ABC", age: 33}]
+
+
+checkAge([{ name: "XYZ" }, { name: "ASD" }, { name: "CVB", age: 33 }], 55) to return ([{ name: "XYZ", age: 55 }, { name: "ASD", age: 55 }, { name: "CVB", age: 33 }])
+
+
+
+
+
+
+LAB 5
+Find the sum of all the ages in an array of objects
+For example;
+[
+                {name: ‘Uche Egbo’, age: 24, occupation: ‘Trader’},
+                {name: ‘Solomon Ogbodo’, age: 30, occupation: ‘Accountant’}
+]
+ 
+to return 54.
+
+
+LAB 6
+Find all the numbers in a string and sum them up
+For Example;
+expect(‘1weudh56jdnbfskjn788sdhkfbs90’) to return (935)
+
+
+LAB 7
+convert this es5 class to es6
+ 
+function Foo(options) {
+  this.index = options.index;
+  this.name = options.name || 'foo';
+  var items = options.items;
+  var self = this;
+  function bar() {
+        self.say();
+  }
+  items.forEach(function() {
+        self.say();
+  });
+  for (var i = 0; i < items.length; i++) {
+        bar();
+  }
+}
+ 
+Foo.prototype.say = function() {
+  console.log(arguments);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+LAB 8
+Given this string “+7n10 +100 -2n5”
+Notation is XnY
+X is the box
+Y is the weight
+ 
+To get weight of one box you multiply X and Y,
+1n50 will be represented as 50 only, no need for the 1.
+ 
+Now find the total weight of boxes.
+ 
+For example “+9n10 -2n10” will return 70
+
+
+LAB 9(*) 
+Return all the unique values in an array as another array.
+For example;
+uniques([2,4,5,4,3,2,5,6,6,7,7,9,1,2,3,5]) will return [1,2,3,4,5,6,7,9];
+
+
+LAB 10
+Return True or False if a word is a Palindrome 
+Hint: a palindrome is a word that can be spelt backwards and looks the same.
+Not case sensitive
+
+
+For example;
+isPalindrome(‘madam’) to return true
+isPalindrome(‘decagon’) to return false
+
+
+
+
+
+LAB 12
+You are given an array of player objects for a competition of several games.
+let register = [
+        {name: ‘Tolu’, age: 54, game:’Chess’},
+        {name: ‘Ikenna’, age: 19, game:’Catch’},
+        {name: ‘Adammu’, age: 78, game:’FuzzBuzz’},
+{name: ‘David’, age: 23, game:’Chess’}
+]
+
+
+Write a function that:
+Extract all the names of the players from the given array of user objects and return an array of names
+For example;
+playerNames(register) to return [‘Tolu’, ‘Ikenna’,’Adammu’,’David’]
+
+
+LAB 13
+You are given an array of player objects for a competition of several games.
+let register = [
+        {name: ‘Tolu’, age: 54, game:’Chess’},
+        {name: ‘Ikenna’, age: 19, game:’Catch’},
+        {name: ‘Adammu’, age: 78, game:’FuzzBuzz’},
+{name: ‘David’, age: 23, game:’Chess’}
+]
+Write a function that:
+Return only names of players of a particular game
+Note: inputs are not case sensitive
+
+
+For example:
+playerNames(register, ‘Chess’) to return [‘Tolu’, ‘David’]
+playerNames(register, ‘chess’) to return [‘Tolu’, ‘David’]
+
+
+LAB 14
+You are given a string of numbers and characters separated by commas (,).
+For example: ‘2,g,65,e,3,7,5,g,3’
+Find the total sum of the numbers in the given string
+
+
+For example:
+sumNumbers(‘2,g,65,e,3,7,5,g,3’) => 85
+
+
+LAB 15
+Given a two arrays, return the sum of all positive non-zero results when arr1[i] is subtracted from arr2[i].
+For example:
+totalPositiveSum([2, 5, 1, 0, 5, 7], [2, 3, 5, 6, 2, 1]) => 11
+Explanation: 
+2 - 2 = 0
+5 - 3 = 2
+1 - 5 = -4
+0 - 6 = -6
+5 - 2 = 3
+7 - 1 = 6
+
+
+Sum   =  2 + 3 + 6 = 11
